@@ -4,19 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Golf Head-2-Head</title>
   </head>
   <body>
     <h1 class="header">Golf Head to Head Tool</h1>
-    <div class="playerContainer">
-      <select id="player1">
-        <option>Choose a player</option>
-        <option>Justin_Thomas</option>
-      </select>
-      <select id="player2">
-        <option>Choose a player</option>
-        <option>John_Rahm</option>
-      </select>
+    <div class="main">
+      <div class="col">
+        <select id="player1" class="search">
+          <option>Choose a player</option>
+          <option>Justin_Thomas</option>
+        </select>
+        <div class="results">
+          <div class="p1Rounds">Rounds: 40</div>
+          <div class="p1Average">Average: 1.798</div>
+          <div class="p1SgOtt">SG:OTT : .222</div>
+          <div class="p1SgApr">SG:APR : .423</div>
+          <div class="p1SgArg">SG:ATG : .914</div>
+        </div>
+      </div>
+      <div class="col">
+        <select id="player2" class="search">
+          <option>Choose a player</option>
+          <option>John_Rahm</option>
+        </select>
+        <div class="results">
+          <div class="rounds">Rounds: 40</div>
+          <div class="avergae">Average : 1.798</div>
+          <div class="sgOtt">SG:OTT : .222</div>
+          <div class="sgApr">SG:APR : .423</div>
+          <div class="sgArg">SG:ATG : .914</div>
+        </div>
+      </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
